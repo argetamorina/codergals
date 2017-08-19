@@ -1,7 +1,7 @@
 from scrapy import Spider
 from scrapy.selector import Selector
 
-from tutorial.items import StackItem
+from stack.items import StackItem
 
 class StackSpider(Spider):
     name = "stack"
@@ -19,6 +19,12 @@ class StackSpider(Spider):
             items['dayhigh'] = row.xpath('tbody/tr/td[3]/text()').extract()
             items['daylow'] = row.xpath('tbody/tr/td[4]/text()').extract()
 
-            yield items
+            for i in range(len(items['currency'])):
+                item = StackItem()
+                item['currency'] = items['currency'][i]
+                item['last'] = items['last'][i].strip('\n').strip('\t').strip()
+                item['dayhigh'] = items['dayhigh'][i].strip('\n').strip('\t')
+                item['daylow'] = items['daylow'][i].strip('\n').strip('\t')
+                yield item
         # import pdb
         # pdb.set_trace()
