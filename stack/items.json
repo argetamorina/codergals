@@ -1,0 +1,8 @@
+[
+{"currency": "EUR/USD", "last": "1.1760", "dayhigh": "1.1760", "daylow": "1.1760"},
+{"currency": "GBP/USD", "last": "1.2871", "dayhigh": "1.2871", "daylow": "1.2871"},
+{"currency": "USD/JPY", "last": "109.15", "dayhigh": "109.15", "daylow": "109.15"},
+{"currency": "USD/CHF", "last": "0.96480", "dayhigh": "0.96480", "daylow": "0.96480"},
+{"currency": "USD/CAD", "last": "", "dayhigh": "1.2582", "daylow": "1.2577"},
+{"currency": "AUD/USD", "last": "1.2577", "dayhigh": "0.79270", "daylow": "0.79270"}
+]
