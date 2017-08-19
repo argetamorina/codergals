@@ -17,4 +17,5 @@ while i < len(urls):
 
     print (title)
     i+=1
-print "Hello world!"
+print ("Hello world!")
+print (124)
