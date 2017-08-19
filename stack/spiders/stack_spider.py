@@ -1,5 +1,6 @@
 from scrapy import Spider
 from scrapy.selector import Selector
+from datetime import timedelta
 
 from stack.items import StackItem
 
@@ -25,6 +26,7 @@ class StackSpider(Spider):
                 item['last'] = items['last'][i].strip('\n').strip('\t').strip()
                 item['dayhigh'] = items['dayhigh'][i].strip('\n').strip('\t')
                 item['daylow'] = items['daylow'][i].strip('\n').strip('\t')
+                item['scraped_at']= datetime.time();
                 yield item
         # import pdb
         # pdb.set_trace()

@@ -14,3 +14,4 @@ class StackItem(Item):
     last = Field()
     dayhigh = Field()
     daylow = Field()
+    scraped_at = Field()
