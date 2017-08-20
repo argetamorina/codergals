@@ -24,3 +24,5 @@ To store the extracted data in json format we type :
 
 To get the data for every 60 seconds we type the following command on terminal:
 * watch -n 60 scrapy crawl stack
+
+Copyright © 2017, SpiderGals
