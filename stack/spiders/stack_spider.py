@@ -26,7 +26,7 @@ class StackSpider(Spider):
                 item['last'] = items['last'][i].strip('\n').strip('\t').strip()
                 item['dayhigh'] = items['dayhigh'][i].strip('\n').strip('\t')
                 item['daylow'] = items['daylow'][i].strip('\n').strip('\t')
-                item['scraped_at']= datetime.datetime.now()
+                item['scrapped_at']= datetime.datetime.now()
                 yield item
         # import pdb
         # pdb.set_trace()
