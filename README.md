@@ -1,4 +1,4 @@
-FX scraping values from public websites 
+FX scraping values from public websites and saving them into database
 <!--Execute the scrapy project  -->
 scrapy crawl stack
 <!--Write the data taken from the website to a json format -->
